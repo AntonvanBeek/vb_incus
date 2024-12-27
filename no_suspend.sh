@@ -1,4 +1,4 @@
-# Created At: 2020-12-27 12:00:00
+# Created At: 2020-12-27 24:00:00 by AvB
 # standard logind.conf file is located at /etc/systemd/logind.conf
 # Create logind.conf drop-in directory
 sudo mkdir -p /etc/systemd/system/systemd-logind.service.d/
@@ -10,3 +10,4 @@ sudo systemctl restart systemd-logind
 
 # Disable suspend and hibernate altogether
 sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+# Done
