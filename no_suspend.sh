@@ -2,8 +2,8 @@
 # standard logind.conf file is located at /etc/systemd/logind.conf
 # Create logind.conf drop-in directory
 sudo mkdir -p /etc/systemd/system/systemd-logind.service.d/
-# Move the override parameters from the git repository to the drop-in directory
-sudo mv /home/anton/host-install/lid_switch_override.conf /etc/systemd/system/systemd-logind.service.d/
+# Copy the override parameters from the git repository to the drop-in directory
+sudo cp /home/anton/host-install/lid_switch_override.conf /etc/systemd/system/systemd-logind.service.d/
 # Reload the systemd daemon and restart the systemd-logind service
 sudo systemctl daemon-reload 
 sudo systemctl restart systemd-logind
