@@ -1,0 +1,9 @@
+network:
+  version: 2
+  wifis:
+    wlo1:
+      access-points:
+        BeekNet:
+          password: PeTeR120
+      dhcp4: true
+      dhcp6: false
