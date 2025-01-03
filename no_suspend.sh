@@ -3,7 +3,7 @@
 # Create logind.conf drop-in directory
 sudo mkdir -p /etc/systemd/system/systemd-logind.service.d/
 # Copy the override parameters from the git repository to the drop-in directory
-sudo cp /home/anton/host-install/lid_switch_override.conf /etc/systemd/system/systemd-logind.service.d/
+sudo cp /home/anton/tmpi/lid_switch_override.conf /etc/systemd/system/systemd-logind.service.d/
 # Reload the systemd daemon and restart the systemd-logind service
 sudo systemctl daemon-reload 
 sudo systemctl restart systemd-logind
